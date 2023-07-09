@@ -1,10 +1,11 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Prototyping.MainProtoyping.Scripts;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerMovement : MonoBehaviour,Observable<WalkingEvent>
 {
     
     /**
@@ -81,5 +82,20 @@ public class PlayerMovement : MonoBehaviour
         
         // TODO Head bobbing
 
+    }
+
+    public bool addObserver(Observer<WalkingEvent> observer)
+    {
+        throw new NotImplementedException();
+    }
+
+    public bool removeObserver(Observer<WalkingEvent> observer)
+    {
+        throw new NotImplementedException();
+    }
+
+    public void notifyObservers(WalkingEvent eventToFire)
+    {
+        throw new NotImplementedException();
     }
 }
