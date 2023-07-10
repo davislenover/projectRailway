@@ -2,6 +2,6 @@
 {
     public enum EventType
     {
-        WALKING
+        MOVING,STOPPED
     }
 }

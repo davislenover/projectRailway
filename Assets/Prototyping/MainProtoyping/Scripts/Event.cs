@@ -5,6 +5,5 @@ namespace Prototyping.MainProtoyping.Scripts
     public interface Event
     {
         EventType getEventType();
-        string getEventData();
     }
 }
